@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
 
+const isFirefox = typeof navigator !== 'undefined' && navigator.userAgent.toLowerCase().includes('firefox')
+
 const LANGUAGES = [
   { code: 'HR', flag: '🇭🇷' },
   { code: 'EN', flag: '🇬🇧' },
@@ -52,13 +54,15 @@ export default function Navbar() {
               key={code}
               onClick={() => setLang(code)}
               title={code}
-              className={`text-base leading-none w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 ${
+              className={`leading-none w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 ${
+                isFirefox ? 'text-base' : 'text-[10px] font-bold text-gray-700'
+              } ${
                 lang === code
                   ? 'bg-accent/15 ring-1 ring-accent scale-110'
                   : 'opacity-40 hover:opacity-70'
               }`}
             >
-              {flag}
+              {isFirefox ? flag : code}
             </button>
           ))}
         </div>
@@ -71,13 +75,15 @@ export default function Navbar() {
                 key={code}
                 onClick={() => setLang(code)}
                 title={code}
-                className={`text-base leading-none w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200 ${
+                className={`leading-none w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200 ${
+                  isFirefox ? 'text-base' : 'text-[10px] font-bold text-gray-700'
+                } ${
                   lang === code
                     ? 'bg-accent/15 ring-1 ring-accent scale-110'
                     : 'opacity-40 hover:opacity-70'
                 }`}
               >
-                {flag}
+                {isFirefox ? flag : code}
               </button>
             ))}
           </div>
