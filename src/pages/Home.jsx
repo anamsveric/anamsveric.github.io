@@ -31,7 +31,7 @@ export default function Home() {
           <div>
 
             <h1 data-animate className="opacity-0 font-display text-5xl md:text-7xl font-bold text-white leading-[1.05] mb-6">
-              Anamaria <span className="italic font-normal text-white">Sverić</span>
+              Anamaria <span className="text-white">Sverić</span>
             </h1>
 
             <p data-animate className="opacity-0 font-body text-lg text-white/50 leading-relaxed max-w-lg mb-10 text-center">

@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="bg-white/90 backdrop-blur-md rounded-full shadow-lg px-5 py-2.5 flex items-center justify-between">
 
         {/* Lijevo — Dobrodošli */}
-        <Link to="/" className="font-body font-semibold text-base text-black tracking-wide hover:text-blue-600 transition-colors duration-300 shrink-0">
+        <Link to="/" className="font-body font-bold text-base text-black tracking-wide hover:text-blue-600 transition-colors duration-300 shrink-0">
           {t.nav.welcome}
         </Link>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
               key={to}
               to={to}
               className={`font-body text-sm font-medium tracking-wide transition-colors duration-300 ${
-                (to === '/' ? location.pathname === '/' : location.pathname.startsWith(to)) ? 'text-blue-600' : 'text-black hover:text-blue-600'
+                (to === '/' ? location.pathname === '/' : location.pathname.startsWith(to)) ? 'text-blue-600 font-bold' : 'text-black font-bold hover:text-blue-600'
               }`}
             >
               {label}
