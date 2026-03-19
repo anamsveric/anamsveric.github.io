@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useLang } from '../context/LanguageContext'
+
+const LANGUAGES = [
+  { code: 'HR', flag: '🇭🇷' },
+  { code: 'EN', flag: '🇬🇧' },
+  { code: 'DE', flag: '🇩🇪' },
+  { code: 'IT', flag: '🇮🇹' },
+]
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const { lang, setLang, t } = useLang()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -12,10 +21,24 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navLinks = [
-    { label: 'Početna', path: '/' },
-    { label: 'Projekti', path: '/projekti' },
-  ]
+  const LangSwitcher = () => (
+    <div className="flex items-center gap-1">
+      {LANGUAGES.map(({ code, flag }) => (
+        <button
+          key={code}
+          onClick={() => setLang(code)}
+          title={code}
+          className={`text-lg leading-none px-1 py-0.5 rounded transition-all duration-200 ${
+            lang === code
+              ? 'opacity-100 scale-110'
+              : 'opacity-35 hover:opacity-70'
+          }`}
+        >
+          {flag}
+        </button>
+      ))}
+    </div>
+  )
 
   return (
     <nav
@@ -26,44 +49,51 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo / Ime */}
-        <Link
-          to="/"
-          className="font-display text-xl font-bold text-ink tracking-tight hover:text-accent transition-colors duration-300"
-        >
-          IP<span className="text-accent">.</span>
-        </Link>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map(({ label, path }) => (
-            <Link
-              key={path}
-              to={path}
-              className={`font-body text-sm font-medium tracking-wide transition-colors duration-300 relative group ${
-                location.pathname === path ? 'text-accent' : 'text-ink/70 hover:text-ink'
-              }`}
-            >
-              {label}
-              <span
-                className={`absolute -bottom-0.5 left-0 h-px bg-accent transition-all duration-300 ${
-                  location.pathname === path ? 'w-full' : 'w-0 group-hover:w-full'
-                }`}
-              />
-            </Link>
-          ))}
+        {/* Lijevo — prazan prostor za balans (desktop) */}
+        <div className="hidden md:block w-24" />
+
+        {/* Sredina — nav linkovi (desktop) */}
+        <div className="hidden md:flex items-center gap-10">
+          <Link
+            to="/"
+            className={`font-body text-sm font-medium tracking-wide transition-colors duration-300 relative group ${
+              location.pathname === '/' ? 'text-accent' : 'text-ink/70 hover:text-ink'
+            }`}
+          >
+            {t.nav.home}
+            <span className={`absolute -bottom-0.5 left-0 h-px bg-accent transition-all duration-300 ${location.pathname === '/' ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+          </Link>
+
+          <Link
+            to="/projekti"
+            className={`font-body text-sm font-medium tracking-wide transition-colors duration-300 relative group ${
+              location.pathname === '/projekti' ? 'text-accent' : 'text-ink/70 hover:text-ink'
+            }`}
+          >
+            {t.nav.projects}
+            <span className={`absolute -bottom-0.5 left-0 h-px bg-accent transition-all duration-300 ${location.pathname === '/projekti' ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+          </Link>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden flex flex-col gap-1.5 p-1"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
-        </button>
+        {/* Desno — zastavice (desktop) */}
+        <div className="hidden md:block">
+          <LangSwitcher />
+        </div>
+
+        {/* Mobitel — hamburger lijevo + zastavice desno */}
+        <div className="md:hidden flex items-center justify-between w-full">
+          <button
+            className="flex flex-col gap-1.5 p-1"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          </button>
+          <LangSwitcher />
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -73,18 +103,12 @@ export default function Navbar() {
         }`}
       >
         <div className="bg-cream/95 backdrop-blur-md border-t border-ink/10 px-6 py-4 flex flex-col gap-4">
-          {navLinks.map(({ label, path }) => (
-            <Link
-              key={path}
-              to={path}
-              onClick={() => setMenuOpen(false)}
-              className={`font-body text-base font-medium transition-colors duration-200 ${
-                location.pathname === path ? 'text-accent' : 'text-ink/70'
-              }`}
-            >
-              {label}
-            </Link>
-          ))}
+          <Link to="/" onClick={() => setMenuOpen(false)} className={`font-body text-base font-medium ${location.pathname === '/' ? 'text-accent' : 'text-ink/70'}`}>
+            {t.nav.home}
+          </Link>
+          <Link to="/projekti" onClick={() => setMenuOpen(false)} className={`font-body text-base font-medium ${location.pathname === '/projekti' ? 'text-accent' : 'text-ink/70'}`}>
+            {t.nav.projects}
+          </Link>
         </div>
       </div>
     </nav>
