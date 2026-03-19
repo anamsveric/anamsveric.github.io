@@ -25,12 +25,21 @@ export default function Home() {
       {/* Hero section */}
       <section className="relative flex-1 flex items-center">
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-6 w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-6 w-full grid md:grid-cols-2 gap-8 items-center">
+
+          {/* Slika — na mobilnom gore, na desktopu desno */}
+          <div data-animate className="opacity-0 flex justify-center md:hidden">
+            <img
+              src="/foto.jpg.jpg"
+              alt="Anamaria Sverić"
+              className="h-48 w-auto rounded-[30px_0_30px_0] object-cover shadow-2xl"
+            />
+          </div>
 
           {/* Lijevo — tekst */}
           <div>
 
-            <h1 data-animate className="opacity-0 font-display text-5xl md:text-7xl font-bold text-white leading-[1.05] mb-6">
+            <h1 data-animate className="opacity-0 font-display text-4xl md:text-7xl font-bold text-white leading-[1.05] mb-6">
               Anamaria <span className="text-white">Sverić</span>
             </h1>
 
@@ -59,7 +68,7 @@ export default function Home() {
 
           </div>
 
-          {/* Desno — slika */}
+          {/* Desno — slika (samo desktop) */}
           <div data-animate className="opacity-0 hidden md:flex justify-end">
             <div className="relative inline-block">
               <img
