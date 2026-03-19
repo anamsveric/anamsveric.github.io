@@ -28,36 +28,29 @@ export default function Home() {
 
           {/* Lijevo — tekst */}
           <div>
-            <div data-animate className="opacity-0 inline-flex items-center gap-2 mb-8 bg-white/5 border border-white/10 px-4 py-2 rounded-full">
-              <span className="block w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="font-mono text-xs text-white/60 tracking-widest uppercase">
-                {t.hero.available}
-              </span>
-            </div>
 
             <h1 data-animate className="opacity-0 font-display text-5xl md:text-7xl font-bold text-white leading-[1.05] mb-6">
-              {t.hero.title}{' '}
-              <span className="italic font-normal text-accent">{t.hero.title_accent}</span>{' '}
-              {t.hero.title_end}
+              Anamaria <span className="italic font-normal text-white">Sverić</span>
             </h1>
 
-            <p data-animate className="opacity-0 font-body text-lg text-white/50 leading-relaxed max-w-lg mb-10">
-              {t.about.p1}
+            <p data-animate className="opacity-0 font-body text-lg text-white/50 leading-relaxed max-w-lg mb-10 text-center">
+              {t.hero.title}{' '}
+              <span className="text-white">{t.hero.title_accent}</span>{' '}
+              {t.hero.title_end}
             </p>
 
             <div data-animate className="opacity-0 flex flex-wrap gap-4">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-accent text-white font-body text-sm font-medium px-8 py-4 rounded-full hover:bg-accent/85 transition-colors duration-300"
+                className="inline-flex items-center justify-center text-white font-body text-sm font-semibold px-10 py-4 rounded-full transition-all duration-300"
+                style={{ background: 'linear-gradient(135deg, #7B6FFF 0%, #5B4FEF 100%)' }}
               >
                 {t.nav.contact}
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
               </Link>
               <Link
                 to="/projekti"
-                className="inline-flex items-center gap-2 border border-white/20 text-white font-body text-sm font-medium px-8 py-4 rounded-full hover:border-white/40 hover:bg-white/5 transition-all duration-300"
+                className="inline-flex items-center justify-center text-white font-body text-sm font-semibold px-10 py-4 rounded-full transition-all duration-300"
+                style={{ background: 'linear-gradient(135deg, #7B6FFF 0%, #5B4FEF 100%)' }}
               >
                 {t.hero.cta_projects}
               </Link>
@@ -69,9 +62,9 @@ export default function Home() {
           <div data-animate className="opacity-0 hidden md:flex justify-end">
             <div className="relative inline-block">
               <img
-                src="/foto.jpg"
+                src="/foto.jpg.jpg"
                 alt="Anamaria Sverić"
-                className="max-h-[70vh] w-auto rounded-[40px_0_40px_0] object-cover shadow-2xl"
+                className="max-h-[55vh] w-auto rounded-[40px_0_40px_0] object-cover shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 inset-0 border border-accent/30 rounded-[40px_0_40px_0] -z-10" />
             </div>
