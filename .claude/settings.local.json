@@ -17,7 +17,8 @@
       "Bash(cmd /c \"type node_modules\\\\@vitejs\\\\plugin-react\\\\package.json | findstr version\")",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(ls c:/web/anamsveric.github.io/*.jpg*)"
+      "Bash(ls c:/web/anamsveric.github.io/*.jpg*)",
+      "Bash(git worktree:*)"
     ]
   }
 }

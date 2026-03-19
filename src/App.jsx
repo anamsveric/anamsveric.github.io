@@ -5,12 +5,14 @@ import Projekti from './pages/Projekti'
 import Kontakt from './pages/Kontakt'
 import HobijiWeb from './pages/HobijiWeb'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import CookieBanner from './components/CookieBanner'
 import { LanguageProvider } from './context/LanguageContext'
 
 export default function App() {
   return (
     <LanguageProvider>
       <Navbar />
+      <CookieBanner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projekti" element={<Projekti />} />
