@@ -88,6 +88,9 @@ export default function Home() {
           © {new Date().getFullYear()} Anamaria Sverić. {t.contact.footer_rights}
         </p>
         <p className="font-mono text-xs text-muted">{t.contact.footer_made}</p>
+        <Link to="/privacy" className="font-mono text-xs text-muted hover:text-white/60 transition-colors">
+          Politika privatnosti
+        </Link>
       </div>
 
     </main>

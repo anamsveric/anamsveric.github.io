@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
 
 export default function Kontakt() {
@@ -121,6 +122,9 @@ export default function Kontakt() {
               © {new Date().getFullYear()} Anamaria Sverić. {t.contact.footer_rights}
             </p>
             <p className="font-mono text-xs text-white/30">{t.contact.footer_made}</p>
+            <Link to="/privacy" className="font-mono text-xs text-white/30 hover:text-white/60 transition-colors">
+              Politika privatnosti
+            </Link>
           </div>
         </div>
       </section>
