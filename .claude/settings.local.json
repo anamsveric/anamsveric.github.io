@@ -18,7 +18,8 @@
       "Bash(npm install:*)",
       "Bash(npm run:*)",
       "Bash(ls c:/web/anamsveric.github.io/*.jpg*)",
-      "Bash(git worktree:*)"
+      "Bash(git worktree:*)",
+      "Bash(git -C c:/web/anamsveric.github.io worktree prune)"
     ]
   }
 }

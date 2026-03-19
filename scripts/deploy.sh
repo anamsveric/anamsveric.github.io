@@ -5,6 +5,8 @@ echo "Building..."
 npm run build
 
 echo "Deploying to gh-pages..."
+rm -rf ../gh-pages-deploy
+git worktree prune
 git worktree add ../gh-pages-deploy gh-pages
 cp -r dist/. ../gh-pages-deploy/
 cd ../gh-pages-deploy
