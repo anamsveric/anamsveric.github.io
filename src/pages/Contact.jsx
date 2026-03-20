@@ -1,22 +1,12 @@
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
 
+// Ažuriraj ovaj datum kad zamijeniš CV fajl
+const CV_UPDATED = '18.03.2026'
+
 export default function Contact() {
   const { t } = useLang()
-  const [cvDate, setCvDate] = useState(null)
-
-  useEffect(() => {
-    fetch('/cv.pdf', { method: 'HEAD' })
-      .then(res => {
-        const lastModified = res.headers.get('Last-Modified')
-        if (lastModified) {
-          const date = new Date(lastModified)
-          setCvDate(date.toLocaleDateString('hr-HR', { day: '2-digit', month: '2-digit', year: 'numeric' }))
-        }
-      })
-      .catch(() => {})
-  }, [])
+  const cvDate = CV_UPDATED
 
   return (
     <main className="min-h-screen">
@@ -32,7 +22,7 @@ export default function Contact() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 pt-28 pb-16 w-full">
 
           <h1 className="font-display text-3xl md:text-5xl font-bold text-white leading-tight mb-16">
-            "Što mogu napraviti za Vas?"
+            Što mogu napraviti za Vas?
           </h1>
 
           {/* Što mogu napraviti */}

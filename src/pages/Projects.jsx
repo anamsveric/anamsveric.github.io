@@ -8,8 +8,8 @@ export default function Projects() {
       id: 1,
       naziv: 'Projekt Jedan',
       opis: 'Kratki opis prvog projekta. Zamijeni s pravim opisom.',
-      url: 'https://github.com',
-      tag: 'Web App',
+      url: '/projekti',
+      tag: 'Web stranica',
     },
   ]
 
