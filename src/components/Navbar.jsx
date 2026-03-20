@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-4 left-4 right-4 z-50 max-w-6xl mx-auto" style={{ left: '50%', transform: 'translateX(-50%)', width: 'calc(100% - 2rem)' }}>
-      <div className="bg-white/90 backdrop-blur-md rounded-full shadow-lg px-5 py-2.5 flex items-center justify-between">
+      <div className="bg-white/90 backdrop-blur-md rounded-full shadow-lg px-5 py-2.5 flex items-center justify-between relative">
 
         {/* Lijevo — Dobrodošli */}
         <Link to="/" className="font-body font-bold text-base text-black tracking-wide hover:text-blue-600 transition-colors duration-300 shrink-0">
@@ -22,7 +22,7 @@ export default function Navbar() {
         </Link>
 
         {/* Sredina — nav linkovi (desktop) */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:absolute md:left-1/2 md:-translate-x-1/2 md:flex items-center gap-8">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
