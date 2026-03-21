@@ -55,7 +55,7 @@ export default function Contact() {
                 <p className="font-mono text-xs text-white/40 tracking-widest uppercase mb-2">Telefon</p>
                 <div className="flex items-center gap-3 flex-wrap">
                   <a href="tel:+385917938803" className="font-body text-xl text-white hover:text-white/70 transition-colors duration-300">
-                    +385 91 793 8803
+                    +385 91 793 8803 (poslovni)
                   </a>
                   <a href="https://wa.me/385917938803" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity duration-300" style={{color:'#25D366'}} aria-label="WhatsApp">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -92,6 +92,24 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Lokacija */}
+          <div className="mt-12">
+            <p className="font-mono text-xs text-white/40 tracking-widest uppercase mb-3">Lokacija</p>
+            <p className="font-body text-white/60 mb-4">Mostar, BiH — u blizini Veritasa</p>
+            <div className="rounded-xl overflow-hidden border border-white/10" style={{height: '280px'}}>
+              <iframe
+                title="Lokacija"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.0!2d17.8133!3d43.3438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b1793b14a9de9%3A0xa0e6a9fdcede7b1b!2sVeritas%2C%20Mostar!5e0!3m2!1shr!2sba!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{border: 0, filter: 'invert(90%) hue-rotate(200deg) saturate(0.7)'}}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
 
