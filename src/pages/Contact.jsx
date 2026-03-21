@@ -71,7 +71,6 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-            </div>
           </div>
 
           {/* Lokacija */}
