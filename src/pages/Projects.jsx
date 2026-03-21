@@ -11,8 +11,8 @@ export default function Projects() {
     {
       id: 2,
       naziv: 'Restoran Veritas',
-      opis: 'U izradi.',
-      url: '/projekti',
+      opis: 'Test',
+      url: 'https://anamsveric.github.io/restaurantveritas/',
       tag: 'Web stranica',
     },
   ]
