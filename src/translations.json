@@ -4,53 +4,72 @@
       "home": "Početna",
       "projects": "Projekti",
       "contact": "Kontakt",
-      "hobbies": "Hobiji",
       "welcome": "Dobrodošli"
     },
     "hero": {
-      "available": "dostupna za projekte",
-      "title": "Pravo mjesto",
-      "title_accent": "za izradu",
-      "title_end": "weba",
-      "cta_contact": "Kontaktiraj me",
-      "cta_projects": "Pogledaj projekte",
-      "photo": "foto",
-      "cv_updated": "ažurirano"
+      "badge": "Dostupna za suradnju",
+      "title1": "Web",
+      "title2": "Razvoj",
+      "title3": "& Dizajn",
+      "subtitle": "Stvaram digitalna iskustva koja spajaju lijep dizajn s čistim kodom. Pretvaranje ideja u stvarnost, piksel po piksel.",
+      "btn_projects": "Pogledaj projekte",
+      "btn_contact": "Kontakt"
     },
     "about": {
-      "label": "— o meni",
-      "title": "Početak ...",
-      "title_italic": "",
-      "p1": "Ova stranica koju gledate je također dio projekta samostalne izrade te će sadržavat sve radove koje napravim na jednom mjestu. Također, svaki zasebni projekt će bit povezan ovdje.",
-      "p2": "Fokusirana sam na moderan web razvoj, ali uvijek gledam širu sliku — korisničko iskustvo, performanse i kod koji je lako čitati i nadograđivati."
+      "label": "O meni",
+      "title": "Malo o meni",
+      "desc": "Fokusirana sam na moderan web razvoj — korisničko iskustvo, performanse i kod koji je lako čitati i nadograđivati.",
+      "card1": "Vjerujem da se odličan softver rađa na sjecištu dizajna i inženjeringa. Svaki projekt dobiva isti fokus na detalje — bilo da se radi o portfoliju ili kompleksnijoj web aplikaciji.",
+      "card2": "Kad ne kodiram, istražujem nove design trendove i tehnologije. Uvijek otvorena za zanimljive projekte i suradnje."
+    },
+    "skills": {
+      "label": "Vještine",
+      "title": "Što radim najbolje",
+      "s1_name": "Web development",
+      "s1_desc": "React, JavaScript, Tailwind CSS, Git",
+      "s2_name": "UI/UX Design",
+      "s2_desc": "Figma, Tailwind, Motion"
+    },
+    "cta": {
+      "title": "Radimo zajedno",
+      "subtitle": "Imate projekt na umu? Rado ću čuti o tome.",
+      "btn": "Pošalji poruku"
+    },
+    "footer": {
+      "rights": "Sva prava pridržana.",
+      "made": "Napravljeno s React + Tailwind",
+      "privacy": "Politika privatnosti"
     },
     "projects": {
-      "label": "— moji radovi",
-      "title": "Projekti",
-      "open": "Otvori projekt",
-      "dogs_label": "— hobiji",
-      "dogs_title": "Psi",
-      "dogs_soon": "Stranica u izradi — uskoro dostupno."
-    },
-    "hobbies": {
-      "label": "— hobiji",
-      "title": "Provođenje slobodnog vremena",
-      "subtitle": "Psi",
-      "coming_soon": "Stranica u izradi — uskoro dostupno."
+      "label": "Projekti",
+      "title": "Odabrani radovi",
+      "subtitle": "Kolekcija projekata koje sam izgradila — od koncepta i dizajna do razvoja i objave.",
+      "in_progress": "U izradi",
+      "tech_title": "Tehnologije",
+      "tech_desc": "Fokusirana sam na moderan web razvoj — korisničko iskustvo, performanse i kod koji je lako čitati i nadograđivati.",
+      "p1_name": "Moji kućni ljubimci",
+      "p1_desc": "Osobna web stranica posvećena kućnim ljubimcima. Projekt je trenutno u izradi.",
+      "p2_name": "Restoran Veritas",
+      "p2_desc": "Web stranica restorana s modernim dizajnom, prikazom menija i informacijama o lokaciji."
     },
     "contact": {
-      "label": "— kontakt",
-      "write": "Pišite mi!",
+      "label": "Kontakt",
+      "title": "Povežimo se",
+      "subtitle": "Imate projekt ili samo želite pozdraviti? Pišite mi i javit ću se što prije.",
       "services_title": "Što mogu napraviti za Vas?",
-      "services": ["Web stranica (portfolio, tvrtka, obrt)", "Landing page", "WordPress site", "Prilagodba i redesign postojeće stranice"],
+      "services": [
+        "Web stranica (portfolio, tvrtka, obrt)",
+        "Landing page",
+        "Prilagodba i redesign postojeće stranice"
+      ],
       "email_label": "Email",
-      "phone_label": "Telefon",
-      "social_label": "Društvene mreže",
-      "cv_label": "CV",
-      "cv_text": "Za više informacija o drugom radnom iskustvu tu je i CV u PDF obliku!",
-      "privacy": "Politika privatnosti",
-      "footer_rights": "Sva prava pridržana.",
-      "footer_made": "Napravljeno s React + Tailwind"
+      "location_label": "Lokacija",
+      "location_text": "Pula — u blizini Bazilike M. Formoze i Foruma",
+      "socials_title": "Pronađite me online",
+      "cv_title": "CV u PDF obliku",
+      "cv_desc": "Za više informacija o drugom radnom iskustvu.",
+      "cv_btn": "Preuzmi CV",
+      "cv_updated": "ažurirano"
     }
   },
   "EN": {
@@ -58,53 +77,72 @@
       "home": "Home",
       "projects": "Projects",
       "contact": "Contact",
-      "hobbies": "Hobbies",
       "welcome": "Welcome"
     },
     "hero": {
-      "available": "available for projects",
-      "title": "The right place",
-      "title_accent": "to build",
-      "title_end": "your website",
-      "cta_contact": "Contact me",
-      "cta_projects": "View projects",
-      "photo": "photo",
-      "cv_updated": "updated"
+      "badge": "Available for work",
+      "title1": "Web",
+      "title2": "Development",
+      "title3": "& Design",
+      "subtitle": "I craft digital experiences that blend beautiful design with clean code. Turning ideas into reality, one pixel at a time.",
+      "btn_projects": "View projects",
+      "btn_contact": "Contact"
     },
     "about": {
-      "label": "— about me",
-      "title": "Beginning ...",
-      "title_italic": "",
-      "p1": "This website you are looking at is also part of a self-made project and will contain all the work I do in one place. Also, each individual project will be linked here.",
-      "p2": "Focused on modern web development, but always looking at the bigger picture — user experience, performance, and code that is easy to read and extend."
+      "label": "About me",
+      "title": "A little about me",
+      "desc": "Focused on modern web development — user experience, performance and code that is easy to read and extend.",
+      "card1": "I believe great software is born at the intersection of design and engineering. Every project gets the same attention to detail — whether it's a portfolio or a complex web application.",
+      "card2": "When I'm not coding, I explore new design trends and technologies. Always open to interesting projects and collaborations."
+    },
+    "skills": {
+      "label": "Skills",
+      "title": "What I do best",
+      "s1_name": "Web Development",
+      "s1_desc": "React, JavaScript, Tailwind CSS, Git",
+      "s2_name": "UI/UX Design",
+      "s2_desc": "Figma, Tailwind, Motion"
+    },
+    "cta": {
+      "title": "Let's work together",
+      "subtitle": "Have a project in mind? I'd love to hear about it.",
+      "btn": "Send a message"
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "made": "Built with React + Tailwind",
+      "privacy": "Privacy Policy"
     },
     "projects": {
-      "label": "— my work",
-      "title": "Projects",
-      "open": "Open project",
-      "dogs_label": "— hobbies",
-      "dogs_title": "Dogs",
-      "dogs_soon": "Page in progress — coming soon."
-    },
-    "hobbies": {
-      "label": "— hobbies",
-      "title": "Spending free time",
-      "subtitle": "Dogs",
-      "coming_soon": "Page in progress — coming soon."
+      "label": "Projects",
+      "title": "Selected work",
+      "subtitle": "A collection of projects I've built — from concept and design through to development and deployment.",
+      "in_progress": "In progress",
+      "tech_title": "Technologies",
+      "tech_desc": "Focused on modern web development — user experience, performance and code that is easy to read and extend.",
+      "p1_name": "My Pets",
+      "p1_desc": "A personal website dedicated to pets. This project is currently in progress.",
+      "p2_name": "Restaurant Veritas",
+      "p2_desc": "A restaurant website with modern design, menu display and location information."
     },
     "contact": {
-      "label": "— contact",
-      "write": "Write to me!",
-      "services_title": "What can I do for You?",
-      "services": ["Website (portfolio, company, craft)", "Landing page", "WordPress site", "Customization and redesign of existing website"],
+      "label": "Contact",
+      "title": "Let's connect",
+      "subtitle": "Have a project or just want to say hello? Write to me and I'll get back to you as soon as possible.",
+      "services_title": "What can I do for you?",
+      "services": [
+        "Website (portfolio, company, craft)",
+        "Landing page",
+        "Customization and redesign of existing website"
+      ],
       "email_label": "Email",
-      "phone_label": "Phone",
-      "social_label": "Social media",
-      "cv_label": "CV",
-      "cv_text": "For more information about work experience, here is a CV in PDF format!",
-      "privacy": "Privacy Policy",
-      "footer_rights": "All rights reserved.",
-      "footer_made": "Built with React + Tailwind"
+      "location_label": "Location",
+      "location_text": "Pula, Croatia",
+      "socials_title": "Find me online",
+      "cv_title": "CV in PDF format",
+      "cv_desc": "For more information about work experience.",
+      "cv_btn": "Download CV",
+      "cv_updated": "updated"
     }
   },
   "DE": {
@@ -112,53 +150,72 @@
       "home": "Startseite",
       "projects": "Projekte",
       "contact": "Kontakt",
-      "hobbies": "Hobbys",
       "welcome": "Willkommen"
     },
     "hero": {
-      "available": "verfügbar für Projekte",
-      "title": "Der richtige Ort",
-      "title_accent": "für Ihre",
-      "title_end": "Website",
-      "cta_contact": "Kontaktiere mich",
-      "cta_projects": "Projekte ansehen",
-      "photo": "Foto",
-      "cv_updated": "aktualisiert"
+      "badge": "Verfügbar für Projekte",
+      "title1": "Web",
+      "title2": "Entwicklung",
+      "title3": "& Design",
+      "subtitle": "Ich gestalte digitale Erlebnisse, die schönes Design mit sauberem Code verbinden. Ideen werden Wirklichkeit, Pixel für Pixel.",
+      "btn_projects": "Projekte ansehen",
+      "btn_contact": "Kontakt"
     },
     "about": {
-      "label": "— über mich",
-      "title": "Anfang ...",
-      "title_italic": "",
-      "p1": "Diese Website, die Sie gerade sehen, ist auch Teil eines selbst erstellten Projekts und wird alle meine Arbeiten an einem Ort enthalten. Außerdem wird jedes einzelne Projekt hier verlinkt.",
-      "p2": "Fokussiert auf moderne Webentwicklung, aber immer mit Blick auf das große Ganze — Benutzererfahrung, Performance und Code, der leicht zu lesen und zu erweitern ist."
+      "label": "Über mich",
+      "title": "Ein bisschen über mich",
+      "desc": "Fokussiert auf moderne Webentwicklung — Benutzererfahrung, Performance und Code, der leicht zu lesen und zu erweitern ist.",
+      "card1": "Ich glaube, dass großartige Software an der Schnittstelle von Design und Technik entsteht. Jedes Projekt erhält die gleiche Aufmerksamkeit für Details.",
+      "card2": "Wenn ich nicht kodiere, erkunde ich neue Design-Trends und Technologien. Immer offen für interessante Projekte und Zusammenarbeit."
+    },
+    "skills": {
+      "label": "Fähigkeiten",
+      "title": "Was ich am besten kann",
+      "s1_name": "Web-Entwicklung",
+      "s1_desc": "React, JavaScript, Tailwind CSS, Git",
+      "s2_name": "UI/UX Design",
+      "s2_desc": "Figma, Tailwind, Motion"
+    },
+    "cta": {
+      "title": "Lass uns zusammenarbeiten",
+      "subtitle": "Haben Sie ein Projekt? Ich würde es gerne hören.",
+      "btn": "Nachricht senden"
+    },
+    "footer": {
+      "rights": "Alle Rechte vorbehalten.",
+      "made": "Erstellt mit React + Tailwind",
+      "privacy": "Datenschutz"
     },
     "projects": {
-      "label": "— meine Arbeiten",
-      "title": "Projekte",
-      "open": "Projekt öffnen",
-      "dogs_label": "— Hobbys",
-      "dogs_title": "Hunde",
-      "dogs_soon": "Seite in Bearbeitung — demnächst verfügbar."
-    },
-    "hobbies": {
-      "label": "— Hobbys",
-      "title": "Freizeitgestaltung",
-      "subtitle": "Hunde",
-      "coming_soon": "Seite in Bearbeitung — demnächst verfügbar."
+      "label": "Projekte",
+      "title": "Ausgewählte Arbeiten",
+      "subtitle": "Eine Sammlung von Projekten — von Konzept und Design bis zur Entwicklung und Veröffentlichung.",
+      "in_progress": "In Bearbeitung",
+      "tech_title": "Technologien",
+      "tech_desc": "Fokussiert auf moderne Webentwicklung — Benutzererfahrung, Performance und lesbarer Code.",
+      "p1_name": "Meine Haustiere",
+      "p1_desc": "Eine persönliche Website für Haustiere. Das Projekt ist derzeit in Bearbeitung.",
+      "p2_name": "Restaurant Veritas",
+      "p2_desc": "Eine Restaurant-Website mit modernem Design, Menüanzeige und Standortinformationen."
     },
     "contact": {
-      "label": "— Kontakt",
-      "write": "Schreib mir!",
+      "label": "Kontakt",
+      "title": "Lass uns verbinden",
+      "subtitle": "Haben Sie ein Projekt oder möchten Sie einfach Hallo sagen? Schreiben Sie mir.",
       "services_title": "Was kann ich für Sie tun?",
-      "services": ["Webseite (Portfolio, Unternehmen, Handwerk)", "Landing page", "WordPress-Site", "Anpassung und Redesign bestehender Webseite"],
+      "services": [
+        "Webseite (Portfolio, Unternehmen, Handwerk)",
+        "Landing page",
+        "Anpassung und Redesign bestehender Webseite"
+      ],
       "email_label": "E-Mail",
-      "phone_label": "Telefon",
-      "social_label": "Soziale Medien",
-      "cv_label": "Lebenslauf",
-      "cv_text": "Für mehr Informationen zur Berufserfahrung gibt es hier einen Lebenslauf im PDF-Format!",
-      "privacy": "Datenschutz",
-      "footer_rights": "Alle Rechte vorbehalten.",
-      "footer_made": "Erstellt mit React + Tailwind"
+      "location_label": "Standort",
+      "location_text": "Pula, Kroatien",
+      "socials_title": "Finden Sie mich online",
+      "cv_title": "Lebenslauf im PDF-Format",
+      "cv_desc": "Für mehr Informationen zur Berufserfahrung.",
+      "cv_btn": "Lebenslauf herunterladen",
+      "cv_updated": "aktualisiert"
     }
   },
   "IT": {
@@ -166,53 +223,72 @@
       "home": "Home",
       "projects": "Progetti",
       "contact": "Contatto",
-      "hobbies": "Hobby",
       "welcome": "Benvenuti"
     },
     "hero": {
-      "available": "disponibile per progetti",
-      "title": "Il posto giusto",
-      "title_accent": "per creare",
-      "title_end": "il tuo sito",
-      "cta_contact": "Contattami",
-      "cta_projects": "Vedi progetti",
-      "photo": "foto",
-      "cv_updated": "aggiornato"
+      "badge": "Disponibile per progetti",
+      "title1": "Sviluppo",
+      "title2": "Web",
+      "title3": "& Design",
+      "subtitle": "Creo esperienze digitali che uniscono bel design e codice pulito. Trasformo idee in realtà, un pixel alla volta.",
+      "btn_projects": "Vedi progetti",
+      "btn_contact": "Contatto"
     },
     "about": {
-      "label": "— su di me",
-      "title": "Inizio ...",
-      "title_italic": "",
-      "p1": "Questo sito web che state guardando è anche parte di un progetto fatto da sola e conterrà tutto il lavoro che faccio in un unico posto. Inoltre, ogni singolo progetto sarà collegato qui.",
-      "p2": "Focalizzata sullo sviluppo web moderno, ma guardo sempre al quadro generale — esperienza utente, performance e codice facile da leggere ed estendere."
+      "label": "Su di me",
+      "title": "Un po' su di me",
+      "desc": "Concentrata sullo sviluppo web moderno — esperienza utente, performance e codice facile da leggere ed estendere.",
+      "card1": "Credo che il software eccellente nasca all'incrocio tra design e ingegneria. Ogni progetto riceve la stessa attenzione ai dettagli.",
+      "card2": "Quando non codifico, esploro nuove tendenze di design e tecnologie. Sempre aperta a progetti interessanti e collaborazioni."
+    },
+    "skills": {
+      "label": "Competenze",
+      "title": "Cosa faccio meglio",
+      "s1_name": "Sviluppo Web",
+      "s1_desc": "React, JavaScript, Tailwind CSS, Git",
+      "s2_name": "UI/UX Design",
+      "s2_desc": "Figma, Tailwind, Motion"
+    },
+    "cta": {
+      "title": "Lavoriamo insieme",
+      "subtitle": "Hai un progetto in mente? Mi farebbe piacere sentirne parlare.",
+      "btn": "Invia un messaggio"
+    },
+    "footer": {
+      "rights": "Tutti i diritti riservati.",
+      "made": "Realizzato con React + Tailwind",
+      "privacy": "Privacy"
     },
     "projects": {
-      "label": "— i miei lavori",
-      "title": "Progetti",
-      "open": "Apri progetto",
-      "dogs_label": "— hobby",
-      "dogs_title": "Cani",
-      "dogs_soon": "Pagina in costruzione — disponibile a breve."
-    },
-    "hobbies": {
-      "label": "— hobby",
-      "title": "Tempo libero",
-      "subtitle": "Cani",
-      "coming_soon": "Pagina in costruzione — disponibile a breve."
+      "label": "Progetti",
+      "title": "Lavori selezionati",
+      "subtitle": "Una raccolta di progetti realizzati — dal concetto e design allo sviluppo e pubblicazione.",
+      "in_progress": "In corso",
+      "tech_title": "Tecnologie",
+      "tech_desc": "Concentrata sullo sviluppo web moderno — esperienza utente, performance e codice leggibile.",
+      "p1_name": "I miei animali",
+      "p1_desc": "Un sito personale dedicato agli animali domestici. Il progetto è attualmente in corso.",
+      "p2_name": "Ristorante Veritas",
+      "p2_desc": "Un sito per ristorante con design moderno, visualizzazione del menu e informazioni sulla posizione."
     },
     "contact": {
-      "label": "— contatto",
-      "write": "Scrivimi!",
-      "services_title": "Cosa posso fare per Voi?",
-      "services": ["Sito web (portfolio, azienda, artigianato)", "Landing page", "Sito WordPress", "Personalizzazione e redesign del sito esistente"],
+      "label": "Contatto",
+      "title": "Connettiamoci",
+      "subtitle": "Hai un progetto o vuoi solo salutare? Scrivimi e ti risponderò il prima possibile.",
+      "services_title": "Cosa posso fare per voi?",
+      "services": [
+        "Sito web (portfolio, azienda, artigianato)",
+        "Landing page",
+        "Personalizzazione e redesign del sito esistente"
+      ],
       "email_label": "Email",
-      "phone_label": "Telefono",
-      "social_label": "Social media",
-      "cv_label": "CV",
-      "cv_text": "Per maggiori informazioni sull'esperienza lavorativa, ecco un CV in formato PDF!",
-      "privacy": "Privacy",
-      "footer_rights": "Tutti i diritti riservati.",
-      "footer_made": "Realizzato con React + Tailwind"
+      "location_label": "Posizione",
+      "location_text": "Pola, Croazia",
+      "socials_title": "Trovami online",
+      "cv_title": "CV in formato PDF",
+      "cv_desc": "Per maggiori informazioni sull'esperienza lavorativa.",
+      "cv_btn": "Scarica CV",
+      "cv_updated": "aggiornato"
     }
   }
 }
