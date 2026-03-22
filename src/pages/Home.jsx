@@ -55,7 +55,7 @@ export default function Home() {
               <img
                 src="/foto.jpg"
                 alt="Anamaria Sverić"
-                className="w-72 md:w-80 h-80 md:h-96 object-cover rounded-2xl shadow-xl"
+                className="max-w-sm w-full h-auto rounded-2xl shadow-xl"
               />
             </div>
           </div>
