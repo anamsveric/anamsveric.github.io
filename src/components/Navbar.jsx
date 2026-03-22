@@ -35,15 +35,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F7F3EE]/95 backdrop-blur-sm border-b border-black/5">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
 
         {/* Logo */}
         <Link to="/" className="font-display text-lg font-bold text-ink hover:text-accent transition-colors duration-300">
           {t.nav.welcome}
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop nav - centrirani linkovi */}
+        <div className="hidden md:flex items-center justify-center gap-8">
           {navLinks.map(({ to, label }) => {
             const isActive = to === '/' ? location.pathname === '/' : location.pathname.startsWith(to)
             return (
@@ -61,9 +61,13 @@ export default function Navbar() {
               </Link>
             )
           })}
+        </div>
 
-          {/* Language dropdown */}
-          <div className="relative" ref={dropdownRef}>
+        {/* Desna strana: language + hamburger */}
+        <div className="flex items-center justify-end gap-4">
+
+          {/* Language dropdown - desktop */}
+          <div className="hidden md:block relative" ref={dropdownRef}>
             <button
               onClick={() => setLangOpen(!langOpen)}
               className="flex items-center gap-1.5 font-body text-sm font-medium text-ink/70 hover:text-ink transition-colors duration-300"
@@ -92,10 +96,9 @@ export default function Navbar() {
               </div>
             )}
           </div>
-        </div>
 
-        {/* Hamburger */}
-        <div className="md:hidden flex items-center gap-4">
+          {/* Hamburger */}
+          <div className="md:hidden flex items-center gap-4">
           {/* Mali language switcher na mobitelu */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -132,6 +135,8 @@ export default function Navbar() {
             <span className={`block w-5 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
             <span className={`block w-5 h-0.5 bg-ink transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
+        </div>
+
         </div>
       </div>
 

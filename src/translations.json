@@ -40,6 +40,32 @@
       "made": "Napravljeno s React + Tailwind",
       "privacy": "Politika privatnosti"
     },
+    "privacy": {
+      "label": "Pravni uvjeti",
+      "title": "Politika privatnosti",
+      "updated": "Posljednja izmjena",
+      "intro_title": "Uvod",
+      "intro_text": "Ova stranica (anamsveric.github.io) je osobni portfolio. Poštujemo vašu privatnost i ovom politikom objašnjavamo koje podatke prikupljamo i kako ih koristimo.",
+      "ads_title": "Google AdSense i kolačići",
+      "ads_p1": "Koristimo Google AdSense za prikazivanje oglasa. Google kao treća strana koristi kolačiće (cookies) za prikazivanje oglasa temeljenih na vašim prethodnim posjetima ovoj i drugim web stranicama.",
+      "ads_p2": "Google-ov način korištenja reklamnih kolačića omogućava mu prikazivanje oglasa na temelju vaših posjeta ovoj i drugim stranicama na Internetu.",
+      "ads_p3": "Možete isključiti personalizirane oglase posjetom stranice",
+      "ads_link": "Google postavki oglasa",
+      "data_title": "Podaci koje prikupljamo",
+      "data_p1": "Ova stranica ne prikuplja osobne podatke izravno. Kontakt informacije koje nam pošaljete koristimo isključivo za komunikaciju i ne dijelimo ih s trećim stranama.",
+      "data_p2": "Analitičke i reklamne podatke prikuplja Google sukladno njihovoj",
+      "data_link": "politici privatnosti",
+      "gdpr_title": "Vaša prava (GDPR)",
+      "gdpr_intro": "Kao stanovnik EEA-e imate pravo na:",
+      "gdpr_items": [
+        "pristup osobnim podacima koji se odnose na vas",
+        "ispravak netočnih podataka",
+        "brisanje podataka (\"pravo na zaborav\")",
+        "prigovor na obradu podataka"
+      ],
+      "contact_title": "Kontakt",
+      "contact_text": "Za sva pitanja vezana uz privatnost možete nam se obratiti na"
+    },
     "projects": {
       "label": "Projekti",
       "title": "Odabrani radovi",
@@ -112,6 +138,32 @@
       "rights": "All rights reserved.",
       "made": "Built with React + Tailwind",
       "privacy": "Privacy Policy"
+    },
+    "privacy": {
+      "label": "Legal",
+      "title": "Privacy Policy",
+      "updated": "Last updated",
+      "intro_title": "Introduction",
+      "intro_text": "This site (anamsveric.github.io) is a personal portfolio. We respect your privacy and this policy explains what data we collect and how we use it.",
+      "ads_title": "Google AdSense & Cookies",
+      "ads_p1": "We use Google AdSense to display ads. Google as a third party uses cookies to display ads based on your prior visits to this and other websites.",
+      "ads_p2": "Google's use of advertising cookies enables it to serve ads based on your visits to this and other sites on the Internet.",
+      "ads_p3": "You may opt out of personalised ads by visiting",
+      "ads_link": "Google's ads settings",
+      "data_title": "Data we collect",
+      "data_p1": "This site does not directly collect personal data. Contact information you send us is used solely for communication and is not shared with third parties.",
+      "data_p2": "Analytics and advertising data is collected by Google in accordance with their",
+      "data_link": "privacy policy",
+      "gdpr_title": "Your rights (GDPR)",
+      "gdpr_intro": "As an EEA resident you have the right to:",
+      "gdpr_items": [
+        "access personal data relating to you",
+        "rectification of inaccurate data",
+        "erasure of data (\"right to be forgotten\")",
+        "object to data processing"
+      ],
+      "contact_title": "Contact",
+      "contact_text": "For any privacy-related questions you can reach us at"
     },
     "projects": {
       "label": "Projects",
@@ -186,6 +238,32 @@
       "made": "Erstellt mit React + Tailwind",
       "privacy": "Datenschutz"
     },
+    "privacy": {
+      "label": "Rechtliches",
+      "title": "Datenschutzrichtlinie",
+      "updated": "Zuletzt aktualisiert",
+      "intro_title": "Einleitung",
+      "intro_text": "Diese Seite (anamsveric.github.io) ist ein persönliches Portfolio. Wir respektieren Ihre Privatsphäre und erläutern in dieser Richtlinie, welche Daten wir erheben und wie wir sie verwenden.",
+      "ads_title": "Google AdSense & Cookies",
+      "ads_p1": "Wir verwenden Google AdSense zur Anzeigenschaltung. Google als Drittanbieter verwendet Cookies, um Anzeigen basierend auf Ihren früheren Besuchen dieser und anderer Websites zu schalten.",
+      "ads_p2": "Durch die Verwendung von Werbe-Cookies kann Google Anzeigen basierend auf Ihren Besuchen dieser und anderer Websites im Internet schalten.",
+      "ads_p3": "Sie können personalisierte Anzeigen deaktivieren, indem Sie die",
+      "ads_link": "Google Anzeigeneinstellungen",
+      "data_title": "Daten, die wir erheben",
+      "data_p1": "Diese Seite erhebt keine personenbezogenen Daten direkt. Kontaktinformationen, die Sie uns senden, werden ausschließlich für die Kommunikation verwendet und nicht an Dritte weitergegeben.",
+      "data_p2": "Analyse- und Werbedaten werden von Google gemäß deren",
+      "data_link": "Datenschutzrichtlinie",
+      "gdpr_title": "Ihre Rechte (DSGVO)",
+      "gdpr_intro": "Als EWR-Bewohner haben Sie das Recht auf:",
+      "gdpr_items": [
+        "Zugang zu Ihren personenbezogenen Daten",
+        "Berichtigung unrichtiger Daten",
+        "Löschung von Daten (\"Recht auf Vergessenwerden\")",
+        "Widerspruch gegen die Datenverarbeitung"
+      ],
+      "contact_title": "Kontakt",
+      "contact_text": "Für datenschutzbezogene Fragen können Sie uns erreichen unter"
+    },
     "projects": {
       "label": "Projekte",
       "title": "Ausgewählte Arbeiten",
@@ -258,6 +336,32 @@
       "rights": "Tutti i diritti riservati.",
       "made": "Realizzato con React + Tailwind",
       "privacy": "Privacy"
+    },
+    "privacy": {
+      "label": "Note legali",
+      "title": "Informativa sulla privacy",
+      "updated": "Ultimo aggiornamento",
+      "intro_title": "Introduzione",
+      "intro_text": "Questo sito (anamsveric.github.io) è un portfolio personale. Rispettiamo la tua privacy e questa informativa spiega quali dati raccogliamo e come li utilizziamo.",
+      "ads_title": "Google AdSense e cookie",
+      "ads_p1": "Utilizziamo Google AdSense per mostrare annunci. Google come terza parte utilizza i cookie per mostrare annunci basati sulle visite precedenti a questo e ad altri siti web.",
+      "ads_p2": "L'uso dei cookie pubblicitari da parte di Google gli consente di mostrare annunci basati sulle tue visite a questo e ad altri siti su Internet.",
+      "ads_p3": "Puoi disattivare gli annunci personalizzati visitando le",
+      "ads_link": "impostazioni annunci di Google",
+      "data_title": "Dati che raccogliamo",
+      "data_p1": "Questo sito non raccoglie direttamente dati personali. Le informazioni di contatto che ci invii vengono utilizzate esclusivamente per la comunicazione e non vengono condivise con terze parti.",
+      "data_p2": "I dati analitici e pubblicitari vengono raccolti da Google in conformità con la loro",
+      "data_link": "informativa sulla privacy",
+      "gdpr_title": "I tuoi diritti (GDPR)",
+      "gdpr_intro": "Come residente SEE hai il diritto a:",
+      "gdpr_items": [
+        "accesso ai dati personali che ti riguardano",
+        "rettifica dei dati inesatti",
+        "cancellazione dei dati (\"diritto all'oblio\")",
+        "opposizione al trattamento dei dati"
+      ],
+      "contact_title": "Contatto",
+      "contact_text": "Per qualsiasi domanda relativa alla privacy puoi contattarci a"
     },
     "projects": {
       "label": "Progetti",
