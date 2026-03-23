@@ -35,15 +35,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F7F3EE]/95 backdrop-blur-sm border-b border-black/5">
-      <div className="max-w-6xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
+      <div className="relative max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <Link to="/" className="font-display text-lg font-bold text-ink hover:text-accent transition-colors duration-300">
+        <Link to="/" className="font-display text-lg font-bold text-ink hover:text-accent transition-colors duration-300 shrink-0">
           {t.nav.welcome}
         </Link>
 
-        {/* Desktop nav - centrirani linkovi */}
-        <div className="hidden md:flex items-center justify-center gap-8">
+        {/* Desktop nav - apsolutno centriran */}
+        <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
           {navLinks.map(({ to, label }) => {
             const isActive = to === '/' ? location.pathname === '/' : location.pathname.startsWith(to)
             return (
